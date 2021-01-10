@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Book | Bukkusentā ブックセンター </title>
+<style>
+div.gallery {
+  margin: 15px;
+  border: 0px;
+  float: left;
+  width: 100px;
+  display: inline-block;
+}
+
+div.gallery:hover {
+  border:none;
+}
+div.gallery img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+div.desc {
+  padding: 0px;
+  font-size: 15px;
+  text-align: center;
+  color: crimson;
+}
+  /* Add a card effect for articles */
+  .card {
+    background-color: transparent;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  }
+  a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: arial;
+  }
+
+  a:visited {
+    color: gold;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: arial;
+  }
+
+  a:hover {
+    color: crimson;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: arial;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #ff944D;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #B3BFFF;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #FF6700;
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  input[type=text] {
+  width: 50px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 10%;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #B3BFFF;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #B3BFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #gold;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding-left: 0px;
+}
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+	padding:0;
+	margin:0;
+}
+
+html{
+	background-color: #eaf0f2;
+}
+
+body{
+	font:16px/1.6 Arial,  sans-serif;
+}
+
+header{
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom:190px;
+}
+
+header h1{
+	font: normal 32px/1.5 'Open Sans', sans-serif;
+	color: #3F71AE;
+	padding-bottom: 16px;
+}
+
+header h2{
+	color: #F05283;
+}
+
+header span{
+	color: #3F71EA;
+}
+
+
+/* The footer is fixed to the bottom of the page */
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:0px; }
+}
+
+
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 30px 30px 30px 30px;
+	margin-top: 0;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 100%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+div.info {
+    background-color: #ffb380;
+    border: 0px;
+  }
+}
+  </style>
+  </head>
+
+  <body>
+    <body bgcolor="#FDEBD0">
+  <center><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/pageheader.png" width="1300" height="120"></center>
+<a name="top">
+    <div class="topnav" id="myTopnav">
+    <a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/index.html">Home</a>
+      <a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/about.html">About Us</a>
+      <a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/feedbackform.html">Feedback Form</a>
+      <a href="C:\Users\Asus\Desktop\Bukkusenta Website\policy&regulations/policyandprivacy.html">Policy & Privacy</a>
+      <a href="C:\Users\Asus\Desktop\Bukkusenta Website\FAQ/FAQ.html">FAQ</a>
+      <a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/searchbook.html">Search</a>
+      <a href="C:\Users\Asus\Desktop\Bukkusenta Website\shoppingcheckout/shoppingcheckout.html"><img src="C:\Users\Asus\Desktop\Bukkusenta Website/images/cart.png" width="20" height="19"></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+        <a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/loginform.html">Log In</a>
+    </div>
+
+<br>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+<br>
+      <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/jauhkaupergi.jpg" width="400" height="600" align="left"/> <br clear="right"/><br>
+    <center><h2><b><font color="crimson">Jauh Kau Pergi<br>
+    by Dhiya Zafira
+<br>
+RM18</b></h2></font></center>
+
+    <br>
+    <p align="center"><font face="arial"><b>Details</b></font></p>
+    <center><table border="1" cellpadding="5" cellspacing="10">
+      <tr>
+        <td align="left"> ISBN:	978 983 124 569 9</td>
+        <td align="left"> Language: Malay</td>
+      </tr>
+      <tr>
+      <td align="left">Publisher: ALAF 21</td>
+      <br>
+      <td align="left">Published Date: June 30th 2010</td>
+      </tr>
+      <tr>
+        <td align="left"> 528 pages </td>
+        <td align="left"> Available in Paperback </td>
+      </tr>
+    </table></center>
+
+    <p align="center">______________________________________________________________________</p>
+    <p align="center"><font face="arial"><b>Description</b></font></p>
+  <p align="center"><font face="arial">Aku tidak pernah memilih dia sebagai pelindungku.
+Aku tidak pernah menganyam impian untuk hidup bersamanya. Kasih terhadapnya tidak pernah
+lebih dari yang sepatutnya. Sesungguhnya dia tidak pernah ada dalam perancangan masa depanku.
+Dia hanya seorang sahabat. Namun sesuatu berlaku, menyebabkan haluan kami bertemu.
+Tiba-tiba aku memilih dia. Aku mula mengait benang rindu buatnya. Aku kasihkan dia lebih
+dari segalanya. Tetapi dia, ternyata bukan untukku. Aku bukan pilihan dia!
+Tetapi...menyerah kepada takdir itu bukannya bererti menyerah kalah, kerana manusia
+ditakdirkan untuk menang, bukan?
+</font></p>
+  <br>
+<br>
+<br>
+<br>
+    <a href="C:\Users\Asus\Desktop\Bukkusenta Website\shoppingcheckout/shoppingcheckout.html"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/shoppingbutton.png"></a>
+  <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/usedbooktag.png">
+  </div>
+<br>
+<br>
+    <h3 style="background-color:#ff6600;"> <font color="white"><font size="5"> Most Popular </h3></font></font>
+    <div class="gallery">
+        <a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/geronimostilton.html"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/thekingdomoffantasybook.jpg" width="10" height="10">
+      </a>
+      <div class="desc"><font face="arial"><b>Geronimo Stilton: The Kingdom of Fantasy <br>
+      <br>
+    RM20.90
+    </font></b>
+    </div>
+  </div>
+    <div class="gallery">
+        <a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/midnightsun.html"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/midnightsun.jpg" width="10" height="10">
+      </a>
+      <div class="desc"><font face="arial"><b>Midnight Sun <br>
+      <br>
+    RM50
+    </font></b>
+    </div>
+  </div>
+    <div class="gallery">
+      <a target="_blank" href="C:\Users\Asus\Desktop\Bukkusenta Website\books/iwashere.html">
+        <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/iwashere2.jpg" width="15" height="15">
+      </a>
+      <div class="desc"><font face="arial"><b>I Was Here<br>
+      <br>
+    RM25
+    </font></b></div>
+  </div>
+    <div class="gallery">
+      <a target="_blank" href="C:\Users\Asus\Desktop\Bukkusenta Website\books/weddingbreaker.html">
+        <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/weddingbreaker.jpg" width="15" height="15">
+      </a>
+      <div class="desc"><font face="arial"><b>The Wedding Breaker<br>
+      <br>
+    RM30
+    </font></b></div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="C:\Users\Asus\Desktop\Bukkusenta Website\books/dheos.html">
+        <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/dheos.jpg" width="15" height="15">
+      </a>
+      <div class="desc"><font face="arial"><b>Dheos<br>
+      <br>
+    RM30
+  </font></b></div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="C:\Users\Asus\Desktop\Bukkusenta Website\books/horrorstories.html">
+        <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/horrorstory.jpg" width="15" height="15">
+      </a>
+      <div class="desc"><font face="arial"><b>Horror Stories 2<br>
+      <br>
+    RM30
+  </font></b></div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="C:\Users\Asus\Desktop\Bukkusenta Website\books/suamitanpacinta.html">
+        <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/suamitanpacinta.jpg" width="15" height="15">
+      </a>
+      <div class="desc"><font face="arial"><b>Suami Tanpa Cinta<br>
+      <br>
+    RM25
+    </font></b>
+  </div></div>
+    <br>
+  <div class="rightcolumn">
+    <div class="card">
+      <a target="_blank" href="https://www.traveloka.com/en-my/"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/travelokaads.png" width="300" height="300"></a>
+    </div>
+        <div class="info">
+<center><pre><font color="white"><b>What We Offer To Our Customers</b></font></pre></center>
+  <p><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/freeshippingicon.png" width="50" height="50" align="left"/><br clear="right"><font color="white"><b>Free Shipping</b></font></p>
+<p><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/refundicon.png" width="50" height="50" align="left"/><br clear="right"><font color="white"><b>Money Back Guaranteed</b></font></p>
+<p><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/satisfyicon.png" width="50" height="50" align="left"/><br clear="right"><font color="white"><b>Satisfaction Guaranteed</b></font></p>
+</div>
+</div>
+<br>
+<footer class="footer-distributed">
+			<div class="footer-left">
+				<h3>About Bukkusentā</h3>
+				<p class="footer-links">
+					<a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/index.html">Home</a>
+					|
+					<a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/about.html">About</a>
+          |
+          <a href="C:\Users\Asus\Desktop\Bukkusenta Website\policy&regulations/policyandprivacy.html">Policy & Privacy</a>
+				</p>
+
+				<p class="footer-company-name">© 2019 Bukkusentā</p>
+			</div>
+<br>
+			<div class="footer-center">
+				<div>
+					  <p><span><b>OPEN DAILY</b></span>
+            9.00 a.m to 6.00 p.m<br>
+            (Lunch break: 1.00 p.m to 2.00 p.m)</p>
+				</div>
+<br>
+				<div>
+        <p><span><b>CONTACT US</b></span>
+					+60 1124032284<br>
+          +60 47306659</p>
+				</div>
+				<div>
+					<p><a href="mailto:bukkusenta@gmail.com">bukkusenta@gmail.com</a></p>
+</div>
+      <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/bukkusentalogo.png" width="300" height="150">
+			</div>
+
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We offer to the world the door to various adventures in the form of books.
+          <br>
+          <span>Vision</span>
+          Variety types of books, lots of ideas and fantastic knowledge.
+          <span>Core Value</span>
+          People | Objective | Product | Unity
+          <span>Missions</span>
+           To serve customers with various genres of books.<br>
+           To encourage an interest of reading among potential customers.<br>
+           To give opportunities to users to sell their used books.<br>
+           To care and refurbish used books and sell them again.</p>
+</div>
+<div class="footer-right">
+  <p class="footer-delivery-services">
+    <span><font color="white"> Delivery Services</font></span>
+    <br>
+    <a target="_blank" href="https://www.tracking.my/jt"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/jtlogo.png" width="150" height="100"></a><br>
+    <a target="_blank" href="https://www.tracking.my/poslaju"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/poslajulogo.png" width="150" height="100"></a><br>
+    <a target="_blank" href="https://www.tracking.my/dhl"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/dhllogo.png" width="150" height="100"></a>
+    </div>
+<a href="#top"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/topbutton.png" width="50" height="50" align="right"></a>
+		</footer>
+
+</body>
+</html>

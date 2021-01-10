@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css"
+      href="C:\Users\Asus\Desktop\Bukkusenta Website/styles.css"/>
+  <title>Log In</title>
+  <style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #ff944D;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ff944D;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.signinbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #4CAF50;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+  *{
+  	padding:0;
+  	margin:0;
+  }
+
+  html{
+  	background-color: #eaf0f2;
+  }
+
+  body{
+  	font:16px/1.6 Arial,  sans-serif;
+  }
+
+  header{
+  	text-align: center;
+  	padding-top: 100px;
+  	margin-bottom:190px;
+  }
+
+  header h1{
+  	font: normal 32px/1.5 'Open Sans', sans-serif;
+  	color: #3F71AE;
+  	padding-bottom: 16px;
+  }
+
+  header h2{
+  	color: #F05283;
+  }
+
+  header span{
+  	color: #3F71EA;
+  }
+
+
+  /* The footer is fixed to the bottom of the page */
+
+  footer{
+  	position: fixed;
+  	bottom: 0;
+  }
+
+  @media (max-height:800px){
+  	footer { position: static; }
+  	header { padding-top:0px; }
+  }
+
+
+  .footer-distributed{
+  	background-color: #2c292f;
+  	box-sizing: border-box;
+  	width: 100%;
+  	text-align: left;
+  	font: bold 16px sans-serif;
+  	padding: 30px 30px 30px 30px;
+  	margin-top: 0;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+  	display: inline-block;
+  	vertical-align: top;
+  }
+
+  /* Footer left */
+
+  .footer-distributed .footer-left{
+  	width: 100%;
+  }
+
+  .footer-distributed h3{
+  	color:  #ffffff;
+  	font: normal 36px 'Cookie', cursive;
+  	margin: 0;
+  }
+
+
+  .footer-distributed h3 span{
+  	color:  #e0ac1c;
+  }
+
+  /* Footer links */
+
+  .footer-distributed .footer-links{
+  	color:  #ffffff;
+  	margin: 20px 0 12px;
+  }
+
+  .footer-distributed .footer-links a{
+  	display:inline-block;
+  	line-height: 1.8;
+  	text-decoration: none;
+  	color:  inherit;
+  }
+
+  .footer-distributed .footer-company-name{
+  	color:  #8f9296;
+  	font-size: 14px;
+  	font-weight: normal;
+  	margin: 0;
+  }
+
+  /* Footer Center */
+
+  .footer-distributed .footer-center{
+  	width: 35%;
+  }
+
+
+  .footer-distributed .footer-center i{
+  	background-color:  #33383b;
+  	color: #ffffff;
+  	font-size: 25px;
+  	width: 38px;
+  	height: 38px;
+  	border-radius: 50%;
+  	text-align: center;
+  	line-height: 42px;
+  	margin: 10px 15px;
+  	vertical-align: middle;
+  }
+
+
+  .footer-distributed .footer-center p{
+  	display: inline-block;
+  	color: #ffffff;
+  	vertical-align: middle;
+  	margin:0;
+  }
+
+  .footer-distributed .footer-center p span{
+  	display:block;
+  	font-weight: normal;
+  	font-size:14px;
+  	line-height:2;
+  }
+
+  .footer-distributed .footer-center p a{
+  	color:  #e0ac1c;
+  	text-decoration: none;;
+  }
+
+
+  /* Footer Right */
+
+  .footer-distributed .footer-right{
+  	width: 30%;
+  }
+
+  .footer-distributed .footer-company-about{
+  	line-height: 20px;
+  	color:  #92999f;
+  	font-size: 13px;
+  	font-weight: normal;
+  	margin: 0;
+  }
+
+  .footer-distributed .footer-company-about span{
+  	display: block;
+  	color:  #ffffff;
+  	font-size: 18px;
+  	font-weight: bold;
+  	margin-bottom: 10px;
+  }
+
+  /* Here is the code for Responsive Footer */
+  /* You can remove below code if you don't want Footer to be responsive */
+
+
+  @media (max-width: 880px) {
+
+  	.footer-distributed .footer-left,
+  	.footer-distributed .footer-center,
+  	.footer-distributed .footer-right{
+  		display: block;
+  		width: 100%;
+  		margin-bottom: 10px;
+  		text-align: center;
+  	}
+
+  	.footer-distributed .footer-center i{
+  		margin-left: 0;
+  	}
+  }
+</style>
+</head>
+<body>
+<body bgcolor="#fff0e6">
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+<center><a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/about.html"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/pageheader.png" width="1300" height="120"></a></center>
+</div>
+<br>
+<div class="topnav" id="myTopnav">
+<a href="C:\Users\Asus\Desktop\Bukkusenta Website/index.html">Home</a>
+<a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/about.html">About Us</a>
+<a href="C:\Users\Asus\Desktop\Bukkusenta Website/feedbackform.html">Feedback Form</a>
+<a href="C:\Users\Asus\Desktop\Bukkusenta Website\policy&regulations/policyandprivacy.html">Policy & Privacy</a>
+<a href="C:\Users\Asus\Desktop\Bukkusenta Website\FAQ/FAQ.html">FAQ</a>
+<a href="C:\Users\Asus\Desktop\Bukkusenta Website/searchbook.html">Search</a>
+<a href="C:\Users\Asus\Desktop\Bukkusenta Website\shoppingcheckout/shoppingcheckout.html"><img src="C:\Users\Asus\Desktop\Bukkusenta Website/images/cart.png" width="20" height="19"></a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+</a>
+  <a href="C:\Users\Asus\Desktop\Bukkusenta Website/loginform.html" class="active">Log In</a>
+</div>
+<br>
+<h2>LOG IN</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/bukkusentalogo.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>USERNAME</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="uname"><b>EMAIL</b></label>
+    <input type="text" placeholder="Enter Email" name="uname" required>
+
+    <label for="psw"><b>PASSWORD</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" onClick="feed()">LOGIN</button>
+
+  <script>
+             function feed()
+             {
+                   alert(" Login accepted. ")
+             }
+</script>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+<br>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="signinbtn"><a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/signin.html">SIGN IN</a></button>
+  <class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">CANCEL</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+<br>
+  <footer class="footer-distributed">
+  			<div class="footer-left">
+  				<h3>About Bukkusentā</h3>
+  				<p class="footer-links">
+  					<a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/index.html">Home</a>
+  					|
+  					<a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/about.html">About</a>
+            |
+            <a href="C:\Users\Asus\Desktop\Bukkusenta Website\policy&regulations/policyandprivacy.html">Policy & Privacy</a>
+  				</p>
+
+  				<p class="footer-company-name">© 2019 Bukkusentā</p>
+  			</div>
+  <br>
+  			<div class="footer-center">
+  				<div>
+  					  <p><span><b>OPEN DAILY</b></span>
+              9.00 a.m to 6.00 p.m<br>
+              (Lunch break: 1.00 p.m to 2.00 p.m)</p>
+  				</div>
+  <br>
+  				<div>
+          <p><span><b>CONTACT US</b></span>
+  					+60 1124032284<br>
+            +60 47306659</p>
+  				</div>
+  				<div>
+  					<p><a href="mailto:bukkusenta@gmail.com">bukkusenta@gmail.com</a></p>
+  </div>
+        <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/bukkusentalogo.png" width="300" height="150">
+  			</div>
+
+  			<div class="footer-right">
+  				<p class="footer-company-about">
+  					<span>About the company</span>
+  					We offer to the world the door to various adventures in the form of books.
+            <br>
+            <span>Vision</span>
+            Variety types of books, lots of ideas and fantastic knowledge.
+            <span>Core Value</span>
+            People | Objective | Product | Unity
+            <span>Missions</span>
+             To serve customers with various genres of books.<br>
+             To encourage an interest of reading among potential customers.<br>
+             To give opportunities to users to sell their used books.<br>
+             To care and refurbish used books and sell them again.</p>
+  </div>
+  <div class="footer-right">
+    <p class="footer-delivery-services">
+      <span><font color="white"> Delivery Services</font></span>
+      <br>
+      <a target="_blank" href="https://www.tracking.my/jt"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/jtlogo.png" width="150" height="100"></a><br>
+      <a target="_blank" href="https://www.tracking.my/poslaju"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/poslajulogo.png" width="150" height="100"></a><br>
+      <a target="_blank" href="https://www.tracking.my/dhl"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/dhllogo.png" width="150" height="100"></a>
+      </div>
+  <a href="#top"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/topbutton.png" width="50" height="50" align="right"></a>
+  		</footer>
+
+</body>
+</html>

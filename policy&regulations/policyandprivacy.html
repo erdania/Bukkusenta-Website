@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css"
+  href="C:\Users\Asus\Desktop\Bukkusenta Website/styles.css"/>
+  <title>POLICY AND PRIVACY</title>
+  <style>
+}
+
+.topnav{
+  overflow: hidden;
+  background-color:#ff944D;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color:#f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.mytopnav a:hover {
+  background-color: #B3BFFF;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FF6700;
+  color: white;
+}
+
+.topnav .icon {
+  display:none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+}
+.dropdown {
+float: left;
+overflow: hidden;
+  position: fixed;
+}
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  display: inline-block;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #B3BFFF;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #B3BFFF;
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    </style>
+    </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #ff944d;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #000000;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffedc7;
+}
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+  *{
+  	padding:0;
+  	margin:0;
+  }
+
+  html{
+  	background-color: #eaf0f2;
+  }
+
+  body{
+  	font:16px/1.6 Arial,  sans-serif;
+  }
+
+  header{
+  	text-align: center;
+  	padding-top: 100px;
+  	margin-bottom:190px;
+  }
+
+  header h1{
+  	font: normal 32px/1.5 'Open Sans', sans-serif;
+  	color: #3F71AE;
+  	padding-bottom: 16px;
+  }
+
+  header h2{
+  	color: #F05283;
+  }
+
+  header span{
+  	color: #3F71EA;
+  }
+
+
+  /* The footer is fixed to the bottom of the page */
+
+  footer{
+  	position: fixed;
+  	bottom: 0;
+  }
+
+  @media (max-height:800px){
+  	footer { position: static; }
+  	header { padding-top:0px; }
+  }
+
+
+  .footer-distributed{
+  	background-color: #2c292f;
+  	box-sizing: border-box;
+  	width: 100%;
+  	text-align: left;
+  	font: bold 16px sans-serif;
+  	padding: 30px 30px 30px 30px;
+  	margin-top: 0;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+  	display: inline-block;
+  	vertical-align: top;
+  }
+
+  /* Footer left */
+
+  .footer-distributed .footer-left{
+  	width: 100%;
+  }
+
+  .footer-distributed h3{
+  	color:  #ffffff;
+  	font: normal 36px 'Cookie', cursive;
+  	margin: 0;
+  }
+
+
+  .footer-distributed h3 span{
+  	color:  #e0ac1c;
+  }
+
+  /* Footer links */
+
+  .footer-distributed .footer-links{
+  	color:  #ffffff;
+  	margin: 20px 0 12px;
+  }
+
+  .footer-distributed .footer-links a{
+  	display:inline-block;
+  	line-height: 1.8;
+  	text-decoration: none;
+  	color:  inherit;
+  }
+
+  .footer-distributed .footer-company-name{
+  	color:  #8f9296;
+  	font-size: 14px;
+  	font-weight: normal;
+  	margin: 0;
+  }
+
+  /* Footer Center */
+
+  .footer-distributed .footer-center{
+  	width: 35%;
+  }
+
+
+  .footer-distributed .footer-center i{
+  	background-color:  #33383b;
+  	color: #ffffff;
+  	font-size: 25px;
+  	width: 38px;
+  	height: 38px;
+  	border-radius: 50%;
+  	text-align: center;
+  	line-height: 42px;
+  	margin: 10px 15px;
+  	vertical-align: middle;
+  }
+
+
+  .footer-distributed .footer-center p{
+  	display: inline-block;
+  	color: #ffffff;
+  	vertical-align: middle;
+  	margin:0;
+  }
+
+  .footer-distributed .footer-center p span{
+  	display:block;
+  	font-weight: normal;
+  	font-size:14px;
+  	line-height:2;
+  }
+
+  .footer-distributed .footer-center p a{
+  	color:  #e0ac1c;
+  	text-decoration: none;;
+  }
+
+
+  /* Footer Right */
+
+  .footer-distributed .footer-right{
+  	width: 30%;
+  }
+
+  .footer-distributed .footer-company-about{
+  	line-height: 20px;
+  	color:  #92999f;
+  	font-size: 13px;
+  	font-weight: normal;
+  	margin: 0;
+  }
+
+  .footer-distributed .footer-company-about span{
+  	display: block;
+  	color:  #ffffff;
+  	font-size: 18px;
+  	font-weight: bold;
+  	margin-bottom: 10px;
+  }
+
+  /* Here is the code for Responsive Footer */
+  /* You can remove below code if you don't want Footer to be responsive */
+
+
+  @media (max-width: 880px) {
+
+  	.footer-distributed .footer-left,
+  	.footer-distributed .footer-center,
+  	.footer-distributed .footer-right{
+  		display: block;
+  		width: 100%;
+  		margin-bottom: 10px;
+  		text-align: center;
+  	}
+
+  	.footer-distributed .footer-center i{
+  		margin-left: 0;
+  	}
+  }
+</style>
+</head>
+<body>
+  <center><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/pageheader.png" width="1300" height="120"></center>
+  <div class="topnav" id="myTopnav">
+  <a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/index.html">Home</a>
+    <a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/about.html">About Us</a>
+    <a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/feedbackform.html">Feedback Form</a>
+    <a href="C:\Users\Asus\Desktop\Bukkusenta Website\policy&regulations/policyandprivacy.html" class="active">Policy & Privacy</a>
+    <a href="C:\Users\Asus\Desktop\Bukkusenta Website\FAQ/FAQ.html">FAQ</a>
+    <a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/searchbook.html">Search</a>
+    <a href="C:\Users\Asus\Desktop\Bukkusenta Website\shoppingcheckout/shoppingcheckout.html"><img src="C:\Users\Asus\Desktop\Bukkusenta Website/images/cart.png" width="20" height="19"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+      <a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/loginform.html">Log In</a>
+  </div>
+<br>
+<center><h2><font face="arial" size="5" >POLICY & PRIVACY</h2></font></center>
+<center><b><p>
+Bukkusenta Online Bookcenter Sdn Bhd is aware and alert with the information shared by our clients
+and ensure our customers’ privacy are protected.
+Bukkusenta Sdn Bhd is determined to protect client’s privacy.
+This privacy policy is formulated in accordance with the personal data protection act 2010,
+which defines out how clients' data is collected and used and client’s choices with respect to their personal data.
+This policy explains how we use the data we receive about clients, the procedures we have in necessary
+in designed to safeguard your private information
+while you use the website.
+<br>
+<br>
+Bukkusenta Online Bookcenter Sdn Bhd may specify to third party service providers within and outside Malaysia
+specified aggregate data embedded in your registration applications, but Bukkusenta Online Bookcenter Sdn Bhd will not publicise
+to any individual your name, address, email address or contact number without your consent,
+except to the extent necessary or relevant to abide with legislation and/or legal proceedings.
+<br>
+<br>
+By accessing to this website or using our services, our clients are agree to share personal information with us and agreeing to all the
+terms of policy of Bukkusenta Online Bookcenter Sdn Bhd.</center></b></p>
+<br>
+<br>
+<button type="button" class="collapsible"><center><b>POLICY PRIVACY</b></center></button>
+<div class="content">
+<br>
+<br>
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr>
+<td>
+<b>INFORMATION COLLECTED BY BUKKUSENTA ONLINE BOOKCENTER SDN BHD</b></td></tr></table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr><td>Bukkusenta Online Bookcenter Sdn Bhd. does not give away, share or exchange personal information collected online with external parties.
+Our data centers do not automatically identify particular information about individual users on our site. In addition, our databases do not
+automatically record information about the e-mail address of the client unless it is permitted by the user.
+Information are collected to keep clients’ data as business records and for the process of delivers items ordered.
+<br>
+These are the following personal data usually collected and only accessed with clients’ permission:
+<br>
+<ul type="disc">
+<li>Name</li>
+<li>Date of Birth</li>
+<li>Address</li>
+<li>Phone Number</li>
+<li>Email Address</li>
+<li>Gender</li></ul></td></tr></table>
+
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr><td><b>PURPOSE OF PERSONAL DATA COLLECTED</b></td></tr></table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr><td><ul type="disc">
+<li>To enable purchasing on our website</li>
+<li>To process the payments and receipts</li>
+<li>To keep records of our clients </li>
+<li>To responds to query, request, complaint and improve our services</li>
+<li>To be able provide items need by clients</li>
+<li>For delivery process (email, contact number, address)</li>
+<li>For the process of trade in/out and item returns</li>
+<li>For other purposes permitted by applicable laws and clients’ consent</li><ul>
+</td></tr></table>
+
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr><td><b>USE AND DISLOSURE OF PERSONAL DATA</b></td></tr></table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr><td><ul type="disc">
+<li>Some clients’ personal data may be disclosed to our subsidiaries within our group for necessary process in using our services.
+We ensure that the personal data are treat with confidentiality and use for the purpose within the terms.</li>
+<li>With the data collected from clients, we use and disclosure its for the purpose of improving our websites / business and improve our customer service constantly.</li>
+<li>Personal data use in trade in/out of items, transaction of payment as well as in delivering items purchased including updating and informing clients on items ordered.</li>
+</td<</tr></table>
+
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr><td><b>STORAGE AND RETENTION OF PERSONAL DATA</b></td></tr></table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr><td>Clients personal data shall be deposited either in hard copies in our offices or in databases located in Malaysia operated by our service providers or by us.
+We do not provide you with any digital facilities to remove client’s personal data held by us.</td><tr></table>
+
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr><td><b>COLLECTION OF COMPUTER DATA</b></td></tr></table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr><td>When client visit Bukkusenta Online Bookcenter Sdn Bhd, computer serves will automatically collect information send by clients’ browser when visiting our websites.
+This data does not associate with other personal information.
+<br>
+It is including:
+<br>
+<ul type="disc">
+<li>Computer’s IP address</li>
+<li>Type of browser</li>
+<li>Items and information searched from our site</li>
+<li>Access time & dates, statistics</li>
+</td><tr></table>
+
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr><td><b>CONFIDENTIALITY</b></td></tr></table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr><td><ul type="disc">
+<li>Personal data held will be kept confidential as accordance to this privacy policy and based on applicable law from time to time. </li>
+<li>Any queries, opinions, recommendations, or information other than personal data sent or posted on this website or any part of this website by visitors shall be
+considered to have been willingly provided to us on a non-confidential and non-proprietary basis. We reserve the option to use, reproduce, disclose, transmit, publish,
+broadcast and/or post such information freely elsewhere as set out in (3) above.</li>
+</td<</tr></table>
+
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr><td><b>CHANGES TO PRIVACY POLICY</b></td></tr></table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr><td>We reserve the right, without advance notice, to revise this Privacy Policy from time to time. We recommend checking this Privacy Policy on a regular basis.</td><tr></table>
+</div>
+
+<button type="button" class="collapsible"><center><b>RETURN & REFUND POLICY</b></center></button>
+<div class="content">
+<font face="arial" size="3" >
+<br>
+<b><center>CANCELLING ORDERS ARE NOT ALLOWED AFTER PAYMENTS</center></b>
+<br>
+<br>
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr>
+<td><b>RULES FOR RETURNING ITEMS</b></td></tr>
+</table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr><td>The process of return and refund <b>ONLY</b> accepted based on several condition:
+<ol type="1">
+<li>Incorrect or Defective Items</li>
+<br>
+<li>Wrong Items Received</li></ol>
+<br>
+We will extend a full refund for the price of items that fulfills the above requirements if clients refuse to continue the purchasing.
+However, we regret that the shipping costs will not be refunds.
+<br>
+<br>
+Items must be returned in original forms and conditions including packaging and its accessories.
+<br>
+<br>
+We do not responsible on any interest charges made by clients’ credit card company in the process of returns and refunds of items.
+<br>
+<br>
+Kindly inform to our customer service within <b>3 DAYS</b> after receiving orders regarding returning and refunding via <a href="contactus.html">Contact Us</a>.
+</td></tr>
+
+<br>
+<br>
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr>
+<td><b>CONTACT US</b></td></tr>
+
+
+<table align="center" width="80%" cellpadding="20">
+<tr><td>
+Bukkusenta Online Bookstore Contacts:
+<br>
+<br>
+<ul type="disc">
+<li><a href="+60 12-3456789">+60 12-3456789</a></li>
+<br>
+<li>159 5 Lorong Scotland 3 - 50100 Wilayah Persekutuan, Malaysia.</li>
+<br>
+<li><a href="support@bukkusenta.com">support@bukkusenta.com</a></li></ul>
+</td></tr></table>
+
+</div>
+<button type="button" class="collapsible"><center><b>DELIVERY POLICY</b></center></button>
+<div class="content">
+<font face="arial" size="3" >
+<br>
+<b>BUKKUSENTA ONLINE BOOKCENTER SDN BHD ONLY AVAILABLE FOR HOME DELIVERY</b>
+<br>
+<br>
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr>
+<td><b>DELIVERY / COURIER PARTNERS</b></td></tr>
+</table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr>
+<td><center><a target="_blank" href="https://www.tracking.my/jt"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/jtlogo.png" width="150" height="100"></a><br></center></td>
+<td><center><a target="_blank" href="https://www.tracking.my/poslaju"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/poslajulogo.png" width="150" height="100"></a><br></center></td>
+<td><center><a target="_blank" href="https://www.tracking.my/dhl"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/dhllogo.png" width="150" height="100"></a></center></td>
+</tr>
+</table>
+
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr>
+<td><b>TERMS AND CONDITIONS</b></td>
+</tr>
+</table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr>
+<td><ul type="disc">
+<li>Shipping chargers are calculated based on the weight and destination.</li>
+<br>
+<br>
+<li>In - stock items will be delivered in 2 – 5 of working days.</li>
+<br>
+<br>
+<li>Out – of – stock items will take time to be received by us and will be delivered in 5 – 8 of working days.</li>
+<br>
+<br>
+<li>Items will be delivered and shipped within 2 – 5 days of working days excluded weekends and public holidays.</li>
+<br>
+<br>
+<li>If due to any unforeseen reasons that any product(s) is out-of-stock, we will cancel the whole ordered and refunded at full price.
+New Order will be submitted for in-stock items.</li>
+<br>
+<br>
+<li>Items will be shipped to clients’ address as stated in our databases.<b> IMPORTANT </b> to ensure that address is accurate and recent.</li>
+<br>
+<br>
+<li>Any negligence that occurs during the delivery process due to customer carelessness in providing incorrect location address will not be entertained by us.</li></ul>
+</tr>
+</table>
+
+<table bgcolor="#ff944D" align="center" width="80%" cellpadding="10">
+<tr>
+<td><b>TRACK ORDER</b></td>
+</tr>
+</table>
+
+<table align="center" width="80%" cellpadding="20">
+<tr>
+<td>Once the order of items is shipped out, our Customer Service Management will notify clients the order number, courier company information and courier tracking number via email address.
+<br>
+<br>
+The tracking number can be checked at:
+<br>
+<ol type="1">
+<li><a href="https://www.tracking.my/dhl-ecommerce">DHL ECOMMERCE TRACKING</a></li>
+<br>
+<li><a href="https://www.tracking.my/poslaju">POS LAJU EXPRESS TRACKING</a></li>
+<br>
+<li><a href="https://www.tracking.my/jt">J&T EXPRESS TRACKING</a></li></ol>
+</td></tr>
+</table>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+<br>
+<footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>About Bukkusentā</h3>
+        <p class="footer-links">
+          <a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/index.html">Home</a>
+          |
+          <a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/about.html">About</a>
+          |
+          <a href="C:\Users\Asus\Desktop\Bukkusenta Website\policy&regulations/policyandprivacy.html">Policy & Privacy</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Bukkusentā</p>
+      </div>
+<br>
+      <div class="footer-center">
+        <div>
+            <p><span><b>OPEN DAILY</b></span>
+            9.00 a.m to 6.00 p.m<br>
+            (Lunch break: 1.00 p.m to 2.00 p.m)</p>
+        </div>
+<br>
+        <div>
+        <p><span><b>CONTACT US</b></span>
+          +60 1124032284<br>
+          +60 47306659</p>
+        </div>
+        <div>
+          <p><a href="mailto:bukkusenta@gmail.com">bukkusenta@gmail.com</a></p>
+</div>
+      <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/bukkusentalogo.png" width="300" height="150">
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          We offer to the world the door to various adventures in the form of books.
+          <br>
+          <span>Vision</span>
+          Variety types of books, lots of ideas and fantastic knowledge.
+          <span>Core Value</span>
+          People | Objective | Product | Unity
+          <span>Missions</span>
+           To serve customers with various genres of books.<br>
+           To encourage an interest of reading among potential customers.<br>
+           To give opportunities to users to sell their used books.<br>
+           To care and refurbish used books and sell them again.</p>
+</div>
+<div class="footer-right">
+  <p class="footer-delivery-services">
+    <span><font color="white"> Delivery Services</font></span>
+    <br>
+    <a target="_blank" href="https://www.tracking.my/jt"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/jtlogo.png" width="150" height="100"></a><br>
+    <a target="_blank" href="https://www.tracking.my/poslaju"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/poslajulogo.png" width="150" height="100"></a><br>
+    <a target="_blank" href="https://www.tracking.my/dhl"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/dhllogo.png" width="150" height="100"></a>
+    </div>
+<a href="#top"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/topbutton.png" width="50" height="50" align="right"></a>
+    </footer>
+
+</body>
+</html>

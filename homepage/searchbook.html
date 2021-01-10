@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css"
+  href="C:\Users\Asus\Desktop\Bukkusenta Website/styles.css"/>
+<title> Bukkusentā ブックセンター </title>
+<style>
+/* Add a card effect for articles */
+.card {
+  background-color: transparent;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+div.gallery {
+  margin: 15px;
+  border: 0px;
+  float: left;
+  width: 150px;
+  display: inline-block;
+}
+
+div.gallery:hover {
+  border:none;
+}
+div.gallery img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+div.desc {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: crimson;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  float: left;
+  clear: left;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+	padding:0;
+	margin:0;
+}
+
+html{
+	background-color: #eaf0f2;
+}
+
+body{
+	font:16px/1.6 Arial,  sans-serif;
+}
+
+header{
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom:190px;
+}
+
+header h1{
+	font: normal 32px/1.5 'Open Sans', sans-serif;
+	color: #3F71AE;
+	padding-bottom: 16px;
+}
+
+header h2{
+	color: #F05283;
+}
+
+header span{
+	color: #3F71EA;
+}
+
+
+/* The footer is fixed to the bottom of the page */
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:0px; }
+}
+
+
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 30px 30px 30px 30px;
+	margin-top: 0;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 100%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+<center><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/pageheader.png" width="1300" height="120"></center>
+</div>
+<br>
+<div class="topnav" id="myTopnav">
+<a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/index.html">Home</a>
+  <a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/about.html">About Us</a>
+  <a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/feedbackform.html">Feedback Form</a>
+  <a href="C:\Users\Asus\Desktop\Bukkusenta Website\policy&regulations/policyandprivacy.html">Policy & Privacy</a>
+  <a href="C:\Users\Asus\Desktop\Bukkusenta Website\FAQ/FAQ.html">FAQ</a>
+  <a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/searchbook.html" class="active">Search</a>
+  <a href="C:\Users\Asus\Desktop\Bukkusenta Website\shoppingcheckout/shoppingcheckout.html"><img src="C:\Users\Asus\Desktop\Bukkusenta Website/images/cart.png" width="20" height="19"></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/loginform.html">Log In</a>
+</div>
+<br>
+<h2>Search Our Collections</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for title.." title="Type in a title">
+
+<ul id="myUL">
+  <li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/aacr.html">AACR</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/alih.html">ALIH</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/amukanjembalangtanah.html">AMUKAN JEMBALANG TANAH</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/andaiitutakdirnya.html">ANDAI ITU TAKDIRNYA</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/andaiitutakdirnya2.html">ANDAI ITU TAKDIRNYA II<a/></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/bahangpencakarlangit.html">BAHANG PENCAKAR LANGIT</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/bencanapiroklas.html">BENCANA PIROKLAS</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/johnnycashautobiography.html">CASH: JOHNNY CASH AUTOBIOGRAPHY</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/cikbunga.html">CIK BUNGA, ENCIK SOMBONG</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/deritatulang.html">DERITA TULANG</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/dheos.html">DHEOS</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/fiksyen302.html">FIKSYEN 302</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/geronimostilton.html">GERONIMO STILTON: THE KINGDOM OF FANTASY</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/hatiperempuan.html">HATI PEREMPUAN</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/hinggakeakhirnya.html">HINGGA KE AKHIRNYA</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/horrorstories.html">HORROR STORIES 2</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/iwashere.html">I WAS HERE</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/immortal.html">IMMORTAL</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/intuisiculik.html">INTUISI CULIK</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/isteriseparuhmasa.html">ISTERI SEPARUH MASA</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/janganbiardiamasuk.html">JANGAN BIAR DIA MASUK</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/janganbiardiamasuk2.html">JANGAN BIAR DIA MASUK II</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/jauhkaupergi.html">JAUH KAU PERGI</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/jeritanpuaka.html">JERITAN PUAKA</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/kauperempuanitu.html">KAU PEREMPUAN ITU</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/kauakukita.html">KAU, AKU, KITA</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/kebangkitanmayathidup.html">KEBANGKITAN MAYAT HIDUP</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/kelibat.html">KELIBAT</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/pengantinmusimsalju.html">KLIK! PENGANTIN MUSIM SALJU</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/kuasagelapmeluap.html">KUASA GELAP MELUAP</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/manisnyasouffle.html">MANISNYA SOUFFLE</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/merangkumimemori.html">MERANGKUMI MEMORI</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/midnightsun.html">MIDNIGHT SUN</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/mrgrey.html">MR GREY</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/mrlondon.html">MR LONDON MS LANGKAWI </a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/mudahnyausrah.html">MUDAHNYA MENGENDALIKAN USRAH</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/muet.html">MUET</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/muslihatrupawan.html">MUSLIHAT RUPAWAN</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/preciousiris.html">MY PRECIOUS IRIS</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/mysewelguy.html">MY SEWEL GUY</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/nahasletupan.html">NAHAS LETUPAN </li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/pejuangbumi.html">PEJUANG BUMI</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/pembantudarineraka.html">PEMBANTU DARI NERAKA</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/penyusupributpetir.html">PENYUSUP RIBUT PETIR</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/pesakit701.html">PESAKIT 701</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/politikmalaysia.html">POLITIK MALAYSIA</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/renungan.html">RENUNGAN BUAT MEREKA YANG MENINGGALKAN SOLAT KERANA MALAS</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/sayangpapasayatak.html">SAYANG PAPA SAYA TAK?</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/stickercoloringbook.html">STICKER COLOURING BOOK</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/suamitanpacinta.html">SUAMI TANPA CINTA</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/successaddmath.html">SUCCESS ADDITIONAL MATHEMATICS</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/successchem.html">SUCCESS CHEMISTRY FOR CAMBRIDGE IGCSE</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/suterabidadari.html">SUTERA BIDADARI</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/tabirgelapgadis.html">TABIR GELAP GADIS</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/ageofmagic.html">THE AGE OF MAGIC</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/killroom.html">THE KILL ROOM</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/lostgirlsofrome.html">THE LOST GIRLS OF ROME</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/thenamestheygaveus.html">THE NAMES THEY GAVE US</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/otherchild.html">THE OTHER CHILD</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/thereluctantfundamentalist.html">THE RELUCTANT FUNDAMENTALIST</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/weddingbreaker.html">THE WEDDING BREAKER</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/trilogijanganbacabukuini.html">TRILOGI JANGAN BACA BUKU INI </a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/whatisnotyours.html">WHAT IS NOT YOURS IS NOT YOURS</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/zikirdandoarasulullah.html">ZIKIR DAN DOA-DOA  RASULULLAH</a></li>
+<li><a href="C:\Users\Asus\Desktop\Bukkusenta Website\books/zombiebeatdown.html">ZOMBIE BASEBALL BEATDOWN</a></li>
+
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = ""
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+<br>
+<footer class="footer-distributed">
+			<div class="footer-left">
+				<h3>About Bukkusentā</h3>
+				<p class="footer-links">
+					<a href="C:\Users\Asus\Desktop\Bukkusenta Website\homepage/index.html">Home</a>
+					|
+					<a href="C:\Users\Asus\Desktop\Bukkusenta Website\aboutus/about.html">About</a>
+          |
+          <a href="C:\Users\Asus\Desktop\Bukkusenta Website\policy&regulations/policyandprivacy.html">Policy & Privacy</a>
+				</p>
+
+				<p class="footer-company-name">© 2019 Bukkusentā</p>
+			</div>
+<br>
+			<div class="footer-center">
+				<div>
+					  <p><span><b>OPEN DAILY</b></span>
+            9.00 a.m to 6.00 p.m<br>
+            (Lunch break: 1.00 p.m to 2.00 p.m)</p>
+				</div>
+<br>
+				<div>
+        <p><span><b>CONTACT US</b></span>
+					+60 1124032284<br>
+          +60 47306659</p>
+				</div>
+				<div>
+					<p><a href="mailto:bukkusenta@gmail.com">bukkusenta@gmail.com</a></p>
+</div>
+      <img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/bukkusentalogo.png" width="300" height="150">
+			</div>
+
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We offer to the world the door to various adventures in the form of books.
+          <br>
+          <span>Vision</span>
+          Variety types of books, lots of ideas and fantastic knowledge.
+          <span>Core Value</span>
+          People | Objective | Product | Unity
+          <span>Missions</span>
+           To serve customers with various genres of books.<br>
+           To encourage an interest of reading among potential customers.<br>
+           To give opportunities to users to sell their used books.<br>
+           To care and refurbish used books and sell them again.</p>
+</div>
+<div class="footer-right">
+  <p class="footer-delivery-services">
+    <span><font color="white"> Delivery Services</font></span>
+    <br>
+    <a target="_blank" href="https://www.tracking.my/jt"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/jtlogo.png" width="150" height="100"></a><br>
+    <a target="_blank" href="https://www.tracking.my/poslaju"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/poslajulogo.png" width="150" height="100"></a><br>
+    <a target="_blank" href="https://www.tracking.my/dhl"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/dhllogo.png" width="150" height="100"></a>
+    </div>
+<a href="#top"><img src="C:\Users\Asus\Desktop\Bukkusenta Website\images/topbutton.png" width="50" height="50" align="right"></a>
+		</footer>
+
+</body>
+</html>
